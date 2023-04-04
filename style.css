@@ -2,19 +2,116 @@
     Here you put styles that modify the original behavior CSS/HTML had,
     for example: list elements come with a little circle that nobody uses anymore.
  */
-ul{margin: 0; padding:0;}
-ul li{list-style: none;}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
 
 /* 
     BEHAVIORAL STYLES
     for example: .horizontal, .container, .p-1 (for padding one)
 */
-.p-1{ padding: 10px; }
-
-
-
+.p-1 {
+  padding: 10px;
+}
 
 /* 
     SPECIFIC TO YOUR WEBSITE 
     The more senior you become the less you have specific styles
 */
+
+.image-two,
+.image-three,
+.image-four {
+  width: 33%;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image-one {
+  width: 100%;
+  height: 300px;
+  background-image: url("./assets/product1.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image-two {
+  background-image: url("./assets/product1.jpeg");
+}
+
+.image-three {
+  background-image: url("./assets/product2.jpeg");
+}
+
+.image-four {
+  background-image: url("./assets/product3.jpeg");
+}
+
+header,
+.wrapper {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px lightgrey solid;
+}
+
+.logo {
+  width: 25%;
+}
+
+nav {
+  width: 75%;
+  display: flex;
+  justify-content: right;
+}
+
+.menu {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu li {
+  display: flex;
+}
+
+.product-card {
+  display: flex;
+  gap: 2%;
+}
+
+.left-column {
+  width: 60%;
+}
+
+.right-column {
+  width: 40%;
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: left;
+}
+
+.breadcrumbs li {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.breadcrumbs li + li::before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
